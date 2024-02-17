@@ -18,16 +18,16 @@ const val RICH_PRESENCE_TAG = "discord_rpc"
 private const val RICH_PRESENCE_APPLICATION_ID = "952899285983326208"
 
 // Constant for buttons list
-private val RICH_PRESENCE_BUTTONS = listOf("Get the app!", "Join the Discord!")
+/*private val RICH_PRESENCE_BUTTONS = listOf("Get the app!", "Join the Discord!")
 
 // Constant for metadata list
 private val RICH_PRESENCE_METADATA = Activity.Metadata(
     listOf(
-        "https://github.com/Quickdesh/Animiru",
-        "https://discord.gg/yDuHDMwxhv",
+        "https://github.com/Luffyirl/Animiru",
+        "",
     ),
 )
-
+*/
 @Serializable
 data class Activity(
     @SerialName("application_id")
@@ -38,8 +38,10 @@ data class Activity(
     val type: Int? = null,
     val timestamps: Timestamps? = null,
     val assets: Assets? = null,
+   /*
     val buttons: List<String>? = RICH_PRESENCE_BUTTONS,
     val metadata: Metadata? = RICH_PRESENCE_METADATA,
+    */
 ) {
     @Serializable
     data class Assets(
